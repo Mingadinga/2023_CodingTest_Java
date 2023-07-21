@@ -1,2 +1,6 @@
 # Project exclude paths
 /out/
+
+/src/SWEA/s1_0709.java
+/src/SWEA/s1_0709_backtracking.java
+/src/SWEA/s2_0711.java
