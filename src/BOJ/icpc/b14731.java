@@ -17,7 +17,7 @@ public class b14731 {
         for(int i=0; i<n; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine(), " ");
             int c = Integer.parseInt(st.nextToken());
-            int k = Integer.parseInt(st.nextToken());
+            long k = Long.parseLong(st.nextToken());
             sum = (sum + (((long) c * k) % mod) * pow(2, k-1)) % mod;
         }
 
@@ -25,10 +25,10 @@ public class b14731 {
 
     }
 
-    private static long pow(int bottom, int exponent) {
+    private static long pow(int bottom, long exponent) {
 
         if (exponent == 0) return 1L;
-        else if (exponent == 1) return bottom % mod;
+        else if (exponent == 1) return bottom;
 
         long temp = pow(bottom, exponent / 2);
 
