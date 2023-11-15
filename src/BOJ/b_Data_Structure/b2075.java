@@ -19,7 +19,7 @@ public class b2075 {
             for (int token : tokens) {
                 if (minHeap.size() < n) minHeap.add(token);
                 else if (minHeap.peek() < token){
-                    minHeap.remove(minHeap.poll());
+                    minHeap.poll();
                     minHeap.add(token);
                 }
             }
